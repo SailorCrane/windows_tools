@@ -1,3 +1,4 @@
+error, 防止错误点击
 
 reg query HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 
