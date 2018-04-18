@@ -1,4 +1,10 @@
-reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout /v Scancode Map
+@echo off
+echo 'need administer privilege run'
+
+:: keypath, keyvalue 都有空格, 需要引号
+set KEYPATH=HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
+set KEYVALUE=Scancode Map
+reg delete "%KEYPATH%"  /v  "%KEYVALUE%"
 pause
 
 :: [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
