@@ -1,4 +1,10 @@
+:: vim: set ft=dosbatch  foldlevel=0: vim modeline( set )
+
 error, 防止错误点击
+pause
+pause
+pause
+
 
 reg query HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 
